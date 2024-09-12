@@ -26,8 +26,10 @@ export default function Weather() {
             <span className="wind-speed-value"> {weatherData.wind}km/h</span>
           </p>
         </div>
-        <div className="col-3">
+        <div className="col-1">
           <img src={weatherData.imgUrl} alt={weatherData.conditions} />
+        </div>
+        <div className="col-5">
           <p className="temperature-value">
             {weatherData.temperature}
             <span className="temperature-unit">°C</span>

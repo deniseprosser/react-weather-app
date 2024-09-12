@@ -11,6 +11,7 @@ export default function Header() {
               type="search"
               placeholder="Search for a city"
               className="search-bar"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">

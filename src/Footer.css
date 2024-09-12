@@ -2,6 +2,8 @@
   border-top: 1px solid var(--fourth-color);
   padding: 30px 0 0 0;
   font-size: 14px;
+  color: var(--fourth-color);
+  font-family: "Roboto", sans-serif;
 }
 
 .Footer a {
