@@ -3,7 +3,7 @@ import Header from "./Header";
 import Weather from "./Weather";
 import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Header />
@@ -12,5 +12,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
