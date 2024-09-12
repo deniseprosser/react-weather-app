@@ -1,0 +1,31 @@
+.weather {
+  padding: 25px 0;
+}
+
+.weather .weather-city {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.weather .weather-details {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.weather .humidity-value,
+.wind-speed-value {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.weather .temperature-value {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 88px;
+}
+
+.weather .temperature-unit {
+  font-size: 30px;
+  position: relative;
+  top: -34px;
+}

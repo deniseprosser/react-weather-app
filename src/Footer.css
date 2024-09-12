@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px solid var(--fourth-color);
+  padding: 30px 0 0 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: var(--tertiary-color);
+}
