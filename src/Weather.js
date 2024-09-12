@@ -13,7 +13,7 @@ export default function Weather() {
   };
 
   return (
-    <div className="weather">
+    <div className="Weather">
       <h1 className="weather-city mb-4">{weatherData.city}</h1>
       <div className="row">
         <div className="col-6">

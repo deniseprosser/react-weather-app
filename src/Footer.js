@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="footer text-center">
+    <div className="Footer text-center">
       This project was coded by{" "}
       <a
         href="https://github.com/deniseprosser"
