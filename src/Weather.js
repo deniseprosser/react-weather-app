@@ -12,9 +12,27 @@ export default function Weather() {
     imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
   };
 
+  let apiKey = "";
+  let apiUrl = ``;
+
   return (
     <div className="Weather">
-      <h1 className="weather-city mb-4">{weatherData.city}</h1>
+      <form>
+        <div className="row">
+          <div className="col-9">
+            <input
+              type="search"
+              placeholder="Search for a city"
+              className="search-bar"
+              autoFocus="on"
+            />
+          </div>
+          <div className="col-3">
+            <input type="submit" value="Search" className="search-button" />
+          </div>
+        </div>
+      </form>
+      <h1 className="weather-city mt-4 mb-4">{weatherData.city}</h1>
       <div className="row">
         <div className="col-6">
           <p className="weather-details">
