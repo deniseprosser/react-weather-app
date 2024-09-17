@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { ColorRing } from "react-loader-spinner";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.city,
-      date: "Saturday 15:14",
+      date: new Date(response.data.time * 1000),
       conditions: response.data.condition.description,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
@@ -42,7 +42,8 @@ export default function Weather(props) {
         <div className="row">
           <div className="col-6">
             <p className="weather-details">
-              {weatherData.date}, {weatherData.conditions}
+              <FormattedDate date={weatherData.date} />,{" "}
+              {weatherData.conditions}
               <br />
               Humidity:
               <span className="humidity-value"> {weatherData.humidity}%</span>,
