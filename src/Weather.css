@@ -55,3 +55,8 @@
   position: relative;
   top: -34px;
 }
+
+.Weather img {
+  position: relative;
+  top: -20px;
+}
