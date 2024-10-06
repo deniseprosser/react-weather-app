@@ -43,21 +43,24 @@
   font-weight: 600;
 }
 
-.Weather .temperature-value {
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 64px;
-  margin-left: 30px;
-}
-
-.Weather .temperature-unit {
-  font-size: 30px;
-  position: relative;
-  top: -34px;
-  margin-left: -20px;
-}
-
 .Weather img {
   position: relative;
   top: -20px;
+}
+
+@media (max-width: 800px) {
+  .Weather img {
+    width: 75px;
+    height: 75px;
+    top: -10px;
+  }
+  .Weather .search-bar {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .Weather .search-button {
+    margin-left: -40px;
+    padding: 20px 30px;
+  }
 }

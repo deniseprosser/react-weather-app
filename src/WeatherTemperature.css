@@ -1,3 +1,29 @@
 .WeatherTemperature a {
   color: var(--tertiary-color);
 }
+
+.WeatherTemperature .temperature-value {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-left: 30px;
+}
+
+.WeatherTemperature .temperature-unit {
+  font-size: 30px;
+  position: relative;
+  top: -34px;
+  margin-left: -20px;
+}
+
+@media (max-width: 800px) {
+  .WeatherTemperature .temperature-value {
+    font-size: 48px;
+  }
+  .WeatherTemperature .temperature-unit {
+    font-size: 20px;
+    position: relative;
+    top: -24px;
+    margin-left: -10px;
+  }
+}
